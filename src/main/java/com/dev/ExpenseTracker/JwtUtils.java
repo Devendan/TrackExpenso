@@ -18,7 +18,7 @@ import java.util.List;
 @Component
 public class JwtUtils {
 
-    @Value("$jwt.secret")
+    @Value("${jwt.secret}")
     private String jwtSecret;
     private int jwtExpiration=172800000;
 
