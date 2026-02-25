@@ -1,7 +1,7 @@
 From maven:3.9.6-ecllipse-temurin-17
-WORKDIR/app
+WORKDIR /app
 
-COPY..
+COPY . .
 
 RUN mvn clean package-DskipTests
 
