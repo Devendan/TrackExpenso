@@ -23,11 +23,11 @@ public class CategoryController {
         return ResponseEntity.ok(categoryService.addCategory(categoryreq));
     }
 
-    @GetMapping("/get/{email}")
-    public ResponseEntity<List<CategoryResponse>> getCategoryByUser(@PathVariable String email) {
-       List<CategoryResponse> cat = categoryService.getCategoryByUser(email);
-        return ResponseEntity.ok(cat);
-    }
+//    @GetMapping("/get/{email}")
+//    public ResponseEntity<List<CategoryResponse>> getCategoryByUser(@PathVariable String email) {
+//       List<CategoryResponse> cat = categoryService.getCategoryByUser(email);
+//        return ResponseEntity.ok(cat);
+//    }
 
     @PutMapping ("/edit")
     public ResponseEntity<CategoryResponse> updateCategory(CategoryRequest categoryReq) {
