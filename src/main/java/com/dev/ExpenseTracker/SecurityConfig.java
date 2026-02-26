@@ -29,6 +29,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authReq->
                         authReq.requestMatchers("/expo/user/register/**").permitAll()
                                 .requestMatchers("/expo/user/login").permitAll()
+                                .requestMatchers("/hello").permitAll()
                                 .anyRequest().authenticated());
         http.addFilterBefore( jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
