@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ICategoryService {
     public CategoryResponse addCategory(CategoryRequest categoryreq );
-    public List<CategoryResponse> getCategoryByUser(String email);
+//    public List<CategoryResponse> getCategoryByUser(String email);
     public CategoryResponse updateCategory(CategoryRequest categoryReq);
 
     public void deleteCategory(String CategoryId);

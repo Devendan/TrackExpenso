@@ -43,13 +43,13 @@ public class CategoryServiceImple implements ICategoryService{
 
     }
 
-    @Override
-    public List<CategoryResponse> getCategoryByUser(String email) {
-       User user=userRepo.findByEmail(email);
-        List<Categories> categoryResp=categoryRepo.findByUser (String.valueOf(user));
-        return categoryResp.stream()
-                .map(category->mapper.map(category,CategoryResponse.class)).toList();
-    }
+//    @Override
+//    public List<CategoryResponse> getCategoryByUser(String email) {
+//       User user=userRepo.findByEmail(email);
+//        List<Categories> categoryResp=categoryRepo.findByUser (String.valueOf(user));
+//        return categoryResp.stream()
+//                .map(category->mapper.map(category,CategoryResponse.class)).toList();
+//    }
 
 
     @Override
