@@ -30,7 +30,7 @@ public class Expenses {
     private LocalDateTime CreatedAt;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id" , nullable = false)
     @JsonIgnore
     private User user;
 

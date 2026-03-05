@@ -19,7 +19,7 @@ import java.util.List;
 public class JwtUtils {
 
     @Value("${jwt.secret}")
-    private String jwtSecret;
+    private String jwtSecret ;
     private int jwtExpiration=172800000;
 
     public String getJwtFromHeader(HttpServletRequest req){
